@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <body bgcolor="pink"></body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿ Me perdonas ? 🥺</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #boton1, #boton2 {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        #boton2.moved {
+            order: -1;
+        }
+
+        #mensaje {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+  <h1>Perdon por dejarte de escirbir de la nada</h1>  
+  <h2>Me perdonas ?? 🥺</h2>
+
+
+    <button id="boton1">Si</button>
+    <button id="boton2">No</button>
+    <h4>
+    <p id="mensaje">Sabia que me perdonarias 💗!</p> </h4>
+
+    <script>
+        // JavaScript para mostrar el texto cuando se presiona el Botón 1
+        document.getElementById('boton1').addEventListener('click', function () {
+            document.getElementById('mensaje').style.display = 'block';
+        });
+
+        // JavaScript para mover el Botón 2
+        document.getElementById('boton2').addEventListener('click', function () {
+            this.classList.toggle('moved');
+        });
+    </script>
+
+</body>
+</html>
+
